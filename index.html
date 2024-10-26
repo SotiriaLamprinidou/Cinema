@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>My Simple Web App</title>
+    <title>Hotel Booking App</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <button id="myButton">Click Me</button>
+    <h1>Welcome to Our Hotel Booking App!</h1>
+    <p>Find your perfect stay at the best hotels.</p>
+    
+    <form id="searchForm">
+        <input type="text" id="location" placeholder="Enter location" required>
+        <input type="date" id="checkIn" required>
+        <input type="date" id="checkOut" required>
+        <button type="submit" id="searchButton">Search Hotels</button>
+    </form>
+
+    <div id="hotelList"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
